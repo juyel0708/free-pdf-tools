@@ -22,7 +22,7 @@
 - [x] Add clear limitations for PDF-to-Word, PDF-to-Excel, PDF-to-PPT, OCR, translation, and summarization instead of silently promising perfect conversion.
 - [x] Add file validation, 25 MB guidance, mobile upload states, file removal, dark mode, and responsive interaction feedback.
 - [x] Add visible progress and cancellation handling for long-running image-to-PDF and merge workflows.
-- [ ] Add retry and multi-output download handling for future multi-result workflows.
+- [x] Add retry handling for completed core workflows; multi-output download remains a future enhancement because the current core tools produce one result per run.
 - [x] Add Bengali-English metadata, FAQ, privacy messaging, sitemap, robots, manifest, and structured public navigation.
 - [x] Add crawlable bilingual landing pages for the core PDF tools and include them in the sitemap.
 
