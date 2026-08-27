@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cutbg.example/sitemap.xml
+Sitemap: https://your-domain.com/sitemap.xml

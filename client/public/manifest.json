@@ -1,17 +1,10 @@
 {
-  "name": "CutBG — ফ্রি Background Remover",
-  "short_name": "CutBG",
-  "description": "ফ্রি, private এবং browser-based background remover",
+  "name": "Paperly — ফ্রি Online PDF Tools",
+  "short_name": "Paperly",
+  "description": "সহজ, private এবং browser-based free PDF tools",
   "lang": "bn",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f7f0e6",
-  "theme_color": "#e4572e",
-  "icons": [
-    {
-      "src": "/manus-storage/cutbg-logo_1be472be.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
-  ]
+  "theme_color": "#ea5b32"
 }
