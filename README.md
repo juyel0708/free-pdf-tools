@@ -55,7 +55,3 @@ After the Web Service is live, open **Render Dashboard → your service → Sett
 At your domain provider, create the records Render requests. A typical setup is `@` as an A record pointing to `216.24.57.1` and `www` as a CNAME pointing to your Render service hostname, such as `free-pdf-tools.onrender.com`. Remove conflicting old A/CNAME/forwarding records for the same host, but keep email-related MX, SPF, DKIM, and TXT records. Do not add an AAAA record unless Render explicitly instructs you to do so.
 
 Return to Render and select **Verify**. DNS changes can take minutes or, depending on the provider, up to 24–48 hours. Render provisions and renews HTTPS automatically after verification. Test the final `https://` root and `www` URLs, then replace `https://your-domain.com` in `client/public/robots.txt` and `client/public/sitemap.xml` before submitting the domain to Google Search Console.
-
-## SEO implementation note
-
-Core tool pages are crawlable routes such as `/jpg-to-pdf`, `/merge-pdf`, and `/compress-pdf`. Each route updates its own browser title, description, canonical URL, and Open Graph title when loaded. This is suitable for the current lightweight release, but server-side rendering or pre-rendering should be added later if maximum crawler-visible route metadata is required.

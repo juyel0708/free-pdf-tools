@@ -1,3 +1,1 @@
 Post-build metadata verification: dist/public/sitemap.xml, robots.txt, and manifest.json are present; built index.html contains the Paperly title and manifest link. The built description tag was separately inspected from source and preserved by Vite.
-
-Core tool landing-page QA: `/jpg-to-pdf`, `/pdf-to-image`, `/merge-pdf`, `/split-pdf`, `/compress-pdf`, and `/pdf-editor` were captured at desktop width and reviewed. Each route rendered the Paperly header, tool-specific Bangla-English hero title, matching icon, upload CTA, three-step workflow, privacy note, and footer without layout errors. The shared premium visual system remained consistent across all six routes.
