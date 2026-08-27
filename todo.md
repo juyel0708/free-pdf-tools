@@ -68,3 +68,9 @@
 
 - [x] Verify built sitemap.xml, robots.txt, manifest.json, title, description, and manifest link in `dist/public`.
 - [x] Record the post-build metadata verification result in the QA notes before the checkpoint.
+
+## User-provided GitHub repository
+
+- [ ] Connect the local project to `https://github.com/juyel0708/free-pdf-tools.git`.
+- [ ] Push the tested Paperly project to the provided public repository.
+- [ ] Verify the remote branch and repository contents after push.
