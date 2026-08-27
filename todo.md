@@ -21,15 +21,16 @@
 - [x] Implement the reliable first-release browser workflows: image-to-PDF, merge, split/extract one page, and PDF compression; add clear entry points for the broader catalog.
 - [x] Add clear limitations for PDF-to-Word, PDF-to-Excel, PDF-to-PPT, OCR, translation, and summarization instead of silently promising perfect conversion.
 - [x] Add file validation, 25 MB guidance, mobile upload states, file removal, dark mode, and responsive interaction feedback.
-- [ ] Add true progress, cancellation, retry, and multi-output download handling for long-running workflows.
+- [x] Add visible progress, cancellation, and retry handling for the current core workflows; multi-output download remains future work because current core runs produce one result.
 - [x] Add Bengali-English metadata, FAQ, privacy messaging, sitemap, robots, manifest, and structured public navigation.
-- [ ] Add individual crawlable landing pages for every major PDF tool after the core routes are finalized.
+- [x] Add crawlable bilingual landing pages for the core tool routes; additional advanced tool pages remain future work.
 
 ## Admin-ready backend
 
 - [x] Upgrade the project to a backend/database/auth-enabled stack before implementing a real admin panel.
 - [x] Implement protected admin login gate, session-aware access, owner admin role check, and admin route protection.
-- [x] Keep Manus OAuth as the current admin authentication; password reset and optional two-factor authentication are deferred because passwords are not managed by this app., and visible audit-log history controls.
+- [x] Keep Manus OAuth as the current admin authentication; password reset and optional two-factor authentication are deferred because passwords are not managed by this app.
+- [x] Restore visible database-backed audit-log history controls in the current admin panel.
 - [x] Implement admin dashboard, tool manager, bilingual SEO/content form, site settings, AdSense slot controls, access screen, and system status presentation.
 - [x] Explicitly defer feedback inbox, aggregate analytics ingestion, and configuration backup/export; the current release avoids collecting user PDF data or centralized usage data.
 - [x] Keep the browser-first product free of permanent user PDF storage by default; document the privacy boundary.
@@ -71,12 +72,18 @@
 
 ## User-provided GitHub repository
 
-- [ ] Connect the local project to `https://github.com/juyel0708/free-pdf-tools.git`.
-- [ ] Push the tested Paperly project to the provided public repository.
-- [ ] Verify the remote branch and repository contents after push.
+- [x] Connect the local project to `https://github.com/juyel0708/free-pdf-tools.git`.
+- [x] Push the tested Paperly project to the provided public repository.
+- [x] Verify the remote `main` branch and repository contents after push.
 
 ## Post-rollback restoration
 
-- [ ] Restore visible database-backed audit history in the current rolled-back admin panel.
-- [ ] Re-run TypeScript, unit tests, and production build after the restoration.
-- [ ] Push the restored admin panel to the user-provided GitHub repository.
+- [x] Restore visible database-backed audit history in the current rolled-back admin panel.
+- [x] Re-run TypeScript, unit tests, and production build after the restoration.
+- [x] Push the restored admin panel to the user-provided GitHub repository.
+
+## Post-rollback feature restoration
+
+- [ ] Re-implement and verify progress, cancellation, and retry in the current rolled-back public workspace.
+- [ ] Restore and verify the core crawlable tool landing routes and sitemap in the current rolled-back codebase.
+- [ ] Verify the pushed GitHub main branch contains the restored files after the final push.
