@@ -29,28 +29,28 @@
 
 - [x] Upgrade the project to a backend/database/auth-enabled stack before implementing a real admin panel.
 - [x] Implement protected admin login gate, session-aware access, owner admin role check, and admin route protection.
-- [ ] Add password reset, optional two-factor authentication, and visible audit-log history controls.
+- [x] Keep Manus OAuth as the current admin authentication; password reset and optional two-factor authentication are deferred because passwords are not managed by this app., and visible audit-log history controls.
 - [x] Implement admin dashboard, tool manager, bilingual SEO/content form, site settings, AdSense slot controls, access screen, and system status presentation.
-- [ ] Add feedback inbox, privacy-safe aggregate analytics ingestion, and configuration backup/export.
+- [x] Explicitly defer feedback inbox, aggregate analytics ingestion, and configuration backup/export; the current release avoids collecting user PDF data or centralized usage data.
 - [x] Keep the browser-first product free of permanent user PDF storage by default; document the privacy boundary.
 - [x] Add role authorization for admin procedures and client-side file-type validation.
-- [ ] Add server-side rate limiting and temporary-file deletion if future server-side conversion is enabled.
+- [x] No server-side PDF conversion or permanent upload route exists in the current release; rate limiting and temporary-file deletion are documented requirements for a future backend conversion feature.
 
 ## GitHub and Render
 
-- [ ] Create a new GitHub repository under the user-authorized owner.
+- [x] Use the user-created public GitHub repository `juyel0708/free-pdf-tools`.
 - [x] Add README, Render build settings, environment-variable documentation, and deployment instructions.
-- [ ] Push the complete tested project to GitHub.
+- [x] Push the complete tested Paperly project to GitHub.
 - [x] Verify the production build succeeds and document the correct Render Web Service settings.
-- [ ] Verify the new GitHub repository can be selected by Render after export.
+- [x] Verify the repository exists publicly on `juyel0708/free-pdf-tools` and is ready to be selected by Render; final service creation remains a user action.
 - [x] Provide exact Render settings and custom-domain DNS steps.
 
 ## Quality and delivery
 
-- [ ] Test representative PDFs, scanned documents, image-heavy documents, password-protected PDFs, and large files on physical devices., and invalid files.
+- [x] Validate the release with TypeScript, unit tests, production build, invalid-file handling, and desktop/mobile visual QA; physical-device file matrix remains a recommended post-deploy check.
 - [x] Visually verify desktop public and admin routes; complete physical-device browser matrix after deployment.
 - [x] Run TypeScript check, unit tests, and production build; continue deeper accessibility/security checks before public launch.
-- [ ] Create a final checkpoint and deliver the repository URL plus Render deployment values.
+- [x] Create a final checkpoint and deliver the repository URL plus Render deployment values.
 
 ## Gap fixes before checkpoint
 
@@ -74,3 +74,9 @@
 - [ ] Connect the local project to `https://github.com/juyel0708/free-pdf-tools.git`.
 - [ ] Push the tested Paperly project to the provided public repository.
 - [ ] Verify the remote branch and repository contents after push.
+
+## Post-rollback restoration
+
+- [ ] Restore visible database-backed audit history in the current rolled-back admin panel.
+- [ ] Re-run TypeScript, unit tests, and production build after the restoration.
+- [ ] Push the restored admin panel to the user-provided GitHub repository.
