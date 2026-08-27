@@ -30,7 +30,8 @@
 
 - [x] Upgrade the project to a backend/database/auth-enabled stack before implementing a real admin panel.
 - [x] Implement protected admin login gate, session-aware access, owner admin role check, and admin route protection.
-- [ ] Add password reset, optional two-factor authentication, and visible audit-log history controls.
+- [ ] Add password reset and optional two-factor authentication.
+- [x] Add visible audit-log history controls backed by the database.
 - [x] Implement admin dashboard, tool manager, bilingual SEO/content form, site settings, AdSense slot controls, access screen, and system status presentation.
 - [ ] Add feedback inbox, privacy-safe aggregate analytics ingestion, and configuration backup/export.
 - [x] Keep the browser-first product free of permanent user PDF storage by default; document the privacy boundary.
